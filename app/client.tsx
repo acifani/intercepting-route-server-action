@@ -8,7 +8,6 @@ export function Client() {
 
   function onSubmit(e: FormEvent) {
     e.preventDefault();
-    console.log(e);
     // @ts-expect-error - quick&dirty, but it's the same
     // with a controlled value stored in state
     router.push(`/foo/${e.target[0].value}`);
